@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Contact Form</title>
+    <link rel="stylesheet" href="labtestform.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <h2>1. Your Contact Details</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="patientId" name="patientId" placeholder="Patient Id if exists">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Id" required>
+                    </div>
+                </div>
+
+                <h2>2. Address</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="houseNumber" name="houseNumber" placeholder="H-No" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="street" name="street" placeholder="Street" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="area" name="area" placeholder="Area" required>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <label for="district">District</label>
+                    <select id="district" name="district" required>
+                        <option value="">Choose</option>
+                        <option value="">District 1</option>
+                        <option value="">District 2</option>
+                        <option value="">District 3</option>
+                        <option value="">District 4</option>
+                        <option value="">District 5</option>
+                    </select>
+                </div>
+
+                <h2>3. Choose the Test Type</h2>
+                <div class="checkbox-group">
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="cbc" name="testType" value="CBC" required>
+                        <label for="cbc">CBC</label>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="urine" name="testType" value="Complete Urine">
+                        <label for="urine">Complete Urine</label>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="lipid" name="testType" value="Lipid Profile">
+                        <label for="lipid">Lipid Profile</label>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="tsh" name="testType" value="TSH">
+                        <label for="tsh">Thyroid Stimulating Hormone (TSH)</label>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="glucose" name="testType" value="Glucose Test">
+                        <label for="glucose">Glucose Test</label>
+                    </div>
+                    <p style="color: red;">Check at least one box without fail</p>
+                </div>
+
+                <h2>4. Do you want a hard copy of the report also?</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="radio" id="yes" name="hardCopy" value="Yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="no" name="hardCopy" value="No">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <h2>5. Select Your Comfortable Date and Time</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <img src="Images/Lab-Test/lab-test.jpg" alt="Fixed Image">
+              
+    </div>
+
+    <div class="form-buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </div>
+</body>
+
+</html>
